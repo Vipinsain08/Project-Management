@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>AspireNex</title>
+</head>
+<body>
+    <nav class="nav_bar">
+        <h1 class="logo_name">DevelopedByVipin</h1>
+        <div class="btn_container">
+            <!-- <a href="#login-section" class="btn_login">Log in</a>
+            <a href="#signup-section" class="btn_signup">Sign up</a> -->
+            <a href="https://www.linkedin.com/in/vipin1395/" target="_blank" class="home__social-icon">
+                <img src="images/icons8-linkedin.svg" style="width: 24px ; height: 24px;">
+              </a>
+              <a href="https://leetcode.com/u/Vipin_1395/" target="_blank" class="home__social-icon">
+                  <img src="images/leetcode_svg.svg" style="width: 24px ; height: 24px;">
+              </a>
+              <a href="https://github.com/Vipinsain08" target="_blank" class="home__social-icon">
+                <img src="images/icons8-github.svg" style="width: 24px ; height: 24px;">
+              </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="curd_section">
+            <div class="main-title">
+                <h1>Project Management</h1>
+            </div>
+            <div class="button-group-container">
+                <button id="btn_add" class="btn" type="button">Add Project</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for adding a new project -->
+    <div id="modal-add-project" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h2>Add New Project</h2>
+            <form id="add-project-form">
+                <div class="input-group-project">
+                    <label for="project-title">Project Title</label>
+                    <input type="text" id="project-title" class="input-field-project" required>
+                </div>
+                <div class="input-group-project">
+                    <label for="project-description">Project Description</label>
+                    <textarea id="project-description" class="input-field-project" required></textarea>
+                </div>
+                <div class="input-group-project">
+                    <label for="issued_to">Issued To</label>
+                    <input type="text" id="issued_to" class="input-field-project" required>
+                </div>
+                <div class="input-group-project">
+                    <label for="date_issued">Date Issued</label>
+                    <input type="date" id="date_issued" class="input-field-project" required>
+                </div>
+                <div class="input-group-project">
+                    <label for="date_of_completion">Date of Completion</label>
+                    <input type="date" id="date_of_completion" class="input-field-project" required>
+                </div>
+                <div class="button-group-form">
+                    <button type="submit" class="btn_save">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="project_detail_container">
+
+       
+        
+    </div>
+
+    <!-- <footer>
+        <p>Copyright &copy; 2024 - Vipin</p>
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+</html>
